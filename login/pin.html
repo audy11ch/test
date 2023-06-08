@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylepin.css">
+  <script src="pin.js"></script>
+  <title>PIN</title>
+</head>
+<body>
+  <div class="container">
+    <div class="pin">
+      <div class="img"><img class="img" src="https://www.maxme.co.th/maxme_mobile/WebsiteImages/icon_maxme_main.png" alt="logo maxme"></div>
+      <form>
+        <div class= "display">
+          <input type="password" name="display" id="display" >
+        </div>
+        <h3>ใส่ PIN เพื่อดำเนินการต่อ</h3><br><br>
+        <a style="font-size: 14px; color: #b1b0b0;padding-top: 50px;" href="#" >ลืมรหัส PIN ></a>
+      
+        <div>
+        <input class="button" type="button" value="1" onclick="display.value += '1' ;insert() "/>
+        <input class="button" type="button" value="2" onclick="display.value += '2' ;insert()">
+        <input class="button" type="button" value="3" onclick="display.value += '3' ;insert()">
+      </div>
+      <div>
+        <input class="button" type="button" value="4" onclick="display.value += '4' ;insert() ">
+        <input class="button" type="button" value="5" onclick="display.value += '5' ;insert()">
+        <input class="button" type="button" value="6" onclick="display.value += '6' ;insert()">
+      </div>
+      <div>
+        <input class="button" type="button" value="7" onclick="display.value += '7';insert() ">
+        <input class="button" type="button" value="8" onclick="display.value += '8';insert() ">
+        <input class="button" type="button" value="9" onclick="display.value += '9';insert() ">
+      </div>
+      <div>
+        <input type="button" value=" ">
+        <input class="button" type="button" value="0" onclick="display.value += '0' ">
+        <input class="button" type="button" value="<" onclick="display.value = display.value.toString().slice(0,-1)">
+      </div>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
